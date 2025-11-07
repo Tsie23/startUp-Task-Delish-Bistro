@@ -1,3 +1,18 @@
+/* Add at the very top of your CSS file */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
 /*Hero styling*/
 .hero {
     position: relative;
@@ -49,8 +64,10 @@
 
 /* Navigation Bar */
 .navbar {
-    position: absolute;
+    position: fixed; /* Changed from absolute for better scrolling */
     top: 0;
+    left: 0;
+    right: 0;
     width: 100%;
     padding: 20px 40px;
     background: transparent;
@@ -63,6 +80,7 @@
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 40px; /* Move padding to container instead */
 }
 
 .logo {
@@ -92,8 +110,8 @@
 
 /* Menu Section */
 .menu {
-    background-color: #b4b4b4;
-    padding: 60px 20px;
+    background-color: #ffffff;
+    padding: 60px 0; /* Remove horizontal padding */
     text-align: center;
 }
 
@@ -136,10 +154,17 @@
     font-weight: bold;
 }
 
+.menu-item img {
+    width: 100%; /* Make the image take the full width of the container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: add rounded corners */
+    object-fit: cover; /* Ensure the image covers the container without distortion */
+}
+
 /* About Section */
 .about {
     background-color: #ffffff;
-    padding: 60px 20px;
+    padding: 60px 0; /* Remove horizontal padding */
     text-align: center;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
     border-top: 1px solid #eee;
@@ -148,14 +173,16 @@
 /* Contact Form and Container*/
 body {
     font-family: Aerial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #ffffff;
     margin: 0;
     padding: 0;
 }
 
 .container {
-    max-width: 600px;
-    margin: 50px auto;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px; /* Add consistent padding */
     background-color: white;
     padding: 30px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -165,6 +192,12 @@ h1 {
     text-align: center;
     margin-bottom: 30px;
     color: #ffd700;
+}
+
+#contact h2 {
+    text-align: center; /* Center align the heading */
+    margin-bottom: 30px; /* Maintain bottom margin for spacing */
+    color: #333; /* Optional: set a color for the heading */
 }
 
 .contact-form .form-group {
@@ -257,4 +290,6 @@ h1 {
         padding: 2rem 0;
     }
 }
+
+
 
