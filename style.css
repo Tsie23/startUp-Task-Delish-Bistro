@@ -237,8 +237,8 @@ h1 {
 /* Footer */
 .site-footer {
     width: 100%;
-    background-color: #333;
-    color: #fff;
+    background-color: #272222;
+    color: #272222;
     padding: 3rem 0;
     margin-top: 4rem;
 }
@@ -258,7 +258,7 @@ h1 {
 
 .site-footer p {
     margin: 0.5rem 0;
-    color: #ccc;
+    color: #272222;
 }
 
 .site-footer .social {
@@ -266,7 +266,7 @@ h1 {
 }
 
 .site-footer a {
-    color: #fff;
+    color: #272222;
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -278,7 +278,7 @@ h1 {
 .site-footer .copyright {
     margin-top: 2rem;
     font-size: 0.9rem;
-    color: #888;
+    color: #272222;
 }
 
 @media (max-width: 768px) {
